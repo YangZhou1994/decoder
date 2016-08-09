@@ -138,7 +138,6 @@ bool vpeDecoder(int buffer_len, char* buffer, VideoData& data) {
 
         }
 	data.channels=3;
-	fclose(fp_open);
         avcodec_close(pCodecCtx);
         avformat_close_input(&pFormatCtx);
 
